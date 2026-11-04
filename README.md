@@ -1,10 +1,10 @@
-# 🐉 PokéDex Nacional — Flutter App
+#  PokéDex Nacional — Flutter App
 
 Aplicación móvil y de escritorio desarrollada en Flutter para la gestión de datos Pokémon, equipos tácticos y visualización detallada utilizando la PokéAPI.
 
 ---
 
-## 🚀 Características Principales (¿Qué hace y qué tiene?)
+##  Características Principales 
 
 * **PokéDex CLR**: Paginación mediante *Scroll Infinito* no bloqueante con búsqueda local e integración directa por ID/Nombre a la PokéAPI.
 * **Filtros Avanzados**: Filtrado interactivo por Generación (Gen 1 a Gen 6), Tipo base y Relaciones de Tipo (Fortalezas y Debilidades de daño 2x).
@@ -19,17 +19,17 @@ Aplicación móvil y de escritorio desarrollada en Flutter para la gestión de d
 
 ---
 
-## 🔒 Permisos del Sistema
+##  Permisos del Sistema
 
-### 📱 Android (`android/app/src/main/AndroidManifest.xml`)
+###  Android (`android/app/src/main/AndroidManifest.xml`)
 * `android.permission.INTERNET`: Requerido para consultar la PokéAPI, cargar imágenes de sprites y reproducir los gritos de audio en tiempo real.
 
-### 🌐 Linux / Desktop (`linux/main.cc`)
+### Linux / Desktop (`linux/main.cc`)
 * **Acceso a Red (Network Access)**: Requerido para peticiones HTTP salientes y almacenamiento en caché de imágenes/audio.
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 * **Flutter & Dart** (Compatible con Linux Desktop & Android)
 * **Provider / ChangeNotifier** (Gestión de estado global)
