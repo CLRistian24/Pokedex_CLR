@@ -1,0 +1,46 @@
+name: pokedex_app
+description: "PokéDex App con PokéAPI para Flutter Mobile & Linux Desktop (UPIIT)"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Conexión HTTP y consumo de la PokéAPI
+  http: ^1.2.0
+
+  # Renderizado y almacenamiento en caché de sprites/artworks de Pokémon
+  cached_network_image: ^3.3.1
+
+  # Persistencia local para el tema visual, favoritos y equipos
+  shared_preferences: ^2.2.2
+
+  # Reproducción del sonido (cry) de los Pokémon
+  audioplayers: ^6.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+  # Generador del icono/logo oficial de la aplicación
+  flutter_launcher_icons: ^0.13.1
+
+# Configuración del logo ejecutable de la App
+flutter_launcher_icons:
+  android: true
+  ios: true
+  linux: true
+  image_path: "assets/logo.png"
+
+flutter:
+  uses-material-design: true
+
+  # Declaración del directorio de recursos
+  assets:
+    - assets/
